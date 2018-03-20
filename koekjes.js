@@ -3,10 +3,10 @@
 	cookieQuery = null,
 	cookieScriptPosition = "bottom",
 	cookieScriptSide = "left",
-	cookieScriptSource = "cookie-script.com",
+	cookieScriptSource = "github.io",
 	cookieScriptDomain = "",
 	cookieScriptReadMore = "https://cookies.insites.com/about-cookies/",
-	cookieId="8e0de6e7e1bdb0b17cb47a6938d18c3e",
+	cookieId="koekjes",
 	cookieScriptDebug = 0, 
 	cookieScriptCurrentUrl=window.location.href ,
 	cookieScriptTitle= '<h4 id="cookiescript_header">This website uses cookies</h4>',
@@ -25,8 +25,7 @@
     },  
 	
 	InjectCookieScript = function () {
-		cookieScriptDropfromFlag=0;if(cookieScriptSrc!='http://'+cookieScriptSource+'/s/'+cookieId+'.js'&&cookieScriptSrc!='http://chs02.'+cookieScriptSource+'/s/'+cookieId+'.js'&&cookieScriptSrc != 'http://chs03.' + cookieScriptSource + '/s/' + cookieId + '.js'&&cookieScriptSrc!='https://'+cookieScriptSource+'/s/'+cookieId+'.js'&&''!=cookieScriptSrc)return!1;cookieScriptDroptoFlag=0;		if(window.location.protocol == 'https:')	cookieScriptStatsDomain='';
-		else										cookieScriptStatsDomain='chs03.';
+		cookieScriptDropfromFlag=0;										cookieScriptStatsDomain='chs03.';
 		cookieScriptCreateCookie = function (n, t, i) {
 			if(window.location.protocol == 'https:')
 				var cookieScriptSecureCookie=";secure";
